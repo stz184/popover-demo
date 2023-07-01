@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover Example</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="banner-wrapper">
+    <img src="images/banner.webp" alt="Leaderboard" />
+
+    <a href="#" id="popover-link" class="circle-wrapper" style="top: 140px; left: 130px;">
+        <div class="circle delay1"></div>
+        <div class="circle delay2"></div>
+        <div class="circle delay3"></div>
+        <div class="circle delay4"></div>
+        <div class="close-btn"><i class="bi bi-x"></i></div>
+        <div class="info-btn"><i class="bi bi-info-lg"></i></div>
+    </a>
+</div>
+
+<div id="popover-content" style="display: none;">
+    <h6 class="product-title">HAYA LABS Echinacea 250 mg / 60 Cap</h6>
+    <p>
+        <strong>Марка:</strong>
+        <a href="https://www.silabg.com/bg/haya-labs-bid465.html" title="HAYA LABS">HAYA LABS</a>
+        <br />
+
+        <strong>Категория:</strong>
+        <a href="https://www.silabg.com/bg/list/cid/268">Имуностимулатори</a>
+        <br />
+
+        <strong>Допълнителни категории:</strong>
+        <a href="https://www.silabg.com/bg/list/cid/268" title="Имуностимулатори">Имуностимулатори</a>,
+        <a href="https://www.silabg.com/bg/list/cid/137">Антиоксиданти</a>,
+        <a href="https://www.silabg.com/bg/list/cid/138">Адаптогени</a>,
+        <a href="https://www.silabg.com/bg/list/cid/139">Екстракти</a>,
+        <a href="https://www.silabg.com/bg/list/cid/141">Билкови</a>
+        <br>
+
+        <strong>Съставки:</strong>
+        <a href="https://www.silabg.com/bg/producting/iid/138">Ехинацея</a>
+    </p>
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../dist/bundle.js"></script>
+</body>
+</html>

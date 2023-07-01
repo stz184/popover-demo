@@ -1,0 +1,91 @@
+.banner-wrapper {
+  position: relative;
+  display: block;
+  width: 800px;
+  margin: 60px auto;
+}
+
+.banner-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.circle-wrapper {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+
+  &:hover *,
+  &:active *,
+  &:focus *,
+  &:visited * {
+    color: white;
+  }
+}
+
+.circle-wrapper .close-btn {
+  display: none;
+}
+
+.circle-wrapper.close .close-btn,
+.circle-wrapper .info-btn {
+  z-index: 9999;
+  position: absolute;
+  font-size: 35px;
+  display: block;
+  width: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.circle-wrapper.close .info-btn {
+  display: none;
+}
+
+.circle {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #ff2600;
+  margin: 10px;
+  transition: 0.1s ease-out;
+  animation-direction: reverse;
+  position: absolute;
+  top: 0;
+}
+
+.circle-wrapper:hover .circle {
+  transition: 5s ease;
+}
+
+.circle-wrapper:hover .delay1 {
+  animation: waves 2.5s linear;
+  animation-delay: 0.1s;
+}
+.circle-wrapper:hover .delay2 {
+  animation: waves 2.5s linear 0.7s forwards;
+}
+.circle-wrapper:hover .delay3 {
+  animation: waves 2.5s linear 1.3s forwards;
+}
+.circle-wrapper:hover .delay4 {
+  animation: waves 2.5s linear 1.9s forwards;
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
