@@ -56,22 +56,18 @@ body {
     display: none;
   }
 
-  :hover .circle {
-    transition: 5s ease;
-  }
-
-  &:hover .delay1 {
-    animation: waves 2.5s linear;
+  .delay {
+    animation: waves 2.5s infinite;
     animation-delay: 0.1s;
   }
-  &:hover .delay2 {
-    animation: waves 2.5s linear 0.7s forwards;
+  .delay2 {
+    animation: waves 2.5s infinite 0.7s;
   }
-  &:hover .delay3 {
-    animation: waves 2.5s linear 1.3s forwards;
+  .delay3 {
+    animation: waves 2.5s infinite 1.3s;
   }
-  &:hover .delay4 {
-    animation: waves 2.5s linear 1.9s forwards;
+  .delay4 {
+    animation: waves 2.5s infinite 1.9s ;
   }
 }
 
